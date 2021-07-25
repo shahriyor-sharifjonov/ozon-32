@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="row main">
+      <div class="col-12 col-xl-9"> 
+        <div class="ozon">
+          <div class="ozon__row ozon__row-with-btns"> 
+            <p class="ozon__title">Все</p>
+            <div class="ozon__item current">
+              <p class="ozon__item__p">Статьи</p>
+            </div>
+            <div class="ozon__item"> 
+              <p class="ozon__item__p">Страницы</p>
+            </div>
+            <div class="ozon__item"> 
+              <p class="ozon__item__p">Страницы</p>
+            </div>
+            <div class="ozon__item">
+              <p class="ozon__item__p">Разделы</p>
+            </div>
+          </div>
+          <div class="ozon__row ozon__row-with-img">
+            <p class="ozon__title">Проект</p>
+            <div class="ozon__item ozon__item-with-img"> <img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+            <div class="ozon__item ozon__item-with-img disabled"><img class="ozon__item__img" src="images/ozon.png" alt=""></div>
+          </div>
+        </div>
+        <div class="content seo-meta">
+          <div class="row seo-meta__header">
+            <div class="col seo-meta__header__item smaller"></div>
+            <div class="col my-col-2 seo-meta__header__item">
+              <div class="dropdown pagination__dropdown">
+                <p class="dropdown-toggle content__header__title" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">URL страницы</p>
+              </div>
+            </div>
+            <div class="col-1 seo-meta__header__item medium">
+              <div class="dropdown pagination__dropdown">
+                <p class="dropdown-toggle content__header__title" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">Последсяя проверка</p>
+              </div>
+            </div>
+            <div class="col seo-meta__header__item small"></div>
+            <div class="col seo-meta__header__item">
+              <div class="dropdown pagination__dropdown">
+                <p class="dropdown-toggle content__header__title" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink"> 
+                  <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.2034 13.3301C14.9702 13.93 14.5769 14.3299 14.1303 14.3299H8.49154C8.0383 14.3299 7.65171 13.93 7.41843 13.3301H0V14.4965C0.0341138 14.9239 0.234981 15.3208 0.559222 15.6014C0.883464 15.882 1.30506 16.0238 1.73297 15.9962H20.9289C21.3568 16.0238 21.7784 15.882 22.1026 15.6014C22.4269 15.3208 22.6278 14.9239 22.6619 14.4965V13.3301H15.2034Z" fill="#494A4A"></path>
+                    <path d="M3.99953 2.6661H18.6631V11.9975H20.6627V1.04645C20.668 0.775328 20.5659 0.5131 20.3786 0.317033C20.1913 0.120965 19.934 0.00699016 19.6629 0H2.99975C2.72867 0.00699016 2.47137 0.120965 2.28404 0.317033C2.09671 0.5131 1.99458 0.775328 1.99996 1.04645V11.9975H3.99953V2.6661Z" fill="#494A4A"></path>
+                  </svg>ПК
+                </p>
+              </div>
+            </div>
+            <div class="col seo-meta__header__item small"></div>
+            <div class="col seo-meta__header__item">
+              <div class="dropdown pagination__dropdown">
+                <p class="dropdown-toggle content__header__title" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink"> 
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                  </svg>Мобильные страницы
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- red -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- yellow -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="61" style="color: #FFAD4D;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="61" style="color: #FFAD4D ;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- red -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- yellow -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="61" style="color: #FFAD4D;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="61" style="color: #FFAD4D ;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- red -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- yellow -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="61" style="color: #FFAD4D;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="61" style="color: #FFAD4D ;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- red -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="45" style="color: #E75E5E;">
+                <svg class="svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C4.07386 4.70266e-08 7.52182 1.45638 10.1822 4.08965C12.8426 6.72292 14.5279 10.3476 14.9148 14.2679C15.3017 18.1883 14.3628 22.1283 12.2785 25.3317C10.1941 28.5351 7.111 30.7762 3.6209 31.625L3.18057 29.4205C6.17825 28.6914 8.82634 26.7665 10.6166 24.0151C12.4069 21.2637 13.2133 17.8796 12.881 14.5123C12.5487 11.1451 11.1012 8.03182 8.81614 5.77008C6.53112 3.50834 3.56962 2.25743 0.5 2.25743V0Z" fill="#E75E5E"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="5" style="width: 5%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="45" style="width: 45%;"></div>
+                <div class="seo-meta__body__item__red" data-value="50" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- yellow -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2418 9.74455L2.31176 16.6667C1.29931 17.2536 0 16.543 0 15.3599V1.51558C0 0.334386 1.29744 -0.378079 2.31176 0.210642L14.2418 7.1328C14.4721 7.26428 14.6636 7.45432 14.7967 7.68366C14.9299 7.913 15 8.17348 15 8.43868C15 8.70387 14.9299 8.96435 14.7967 9.19369C14.6636 9.42303 14.4721 9.61307 14.2418 9.74455Z" fill="#00C48C"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="61" style="color: #FFAD4D;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="61" style="color: #FFAD4D ;">
+                <svg class="svg mr-1px" width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C14.9871 3.17033e-08 17.4323 0.683825 19.6008 1.98575C21.7692 3.28768 23.5879 5.16394 24.8821 7.43421C26.1763 9.70448 26.9025 12.2924 26.9908 14.9493C27.0792 17.6062 26.5268 20.2428 25.3866 22.6056C24.2465 24.9683 22.557 26.9779 20.4805 28.4411C18.4041 29.9044 16.0104 30.7721 13.5296 30.9609C11.0488 31.1497 8.56433 30.6532 6.31489 29.5191C4.06544 28.3851 2.12668 26.6516 0.684933 24.4853L2.35192 23.2176C3.59024 25.0782 5.25547 26.5671 7.18754 27.5412C9.11961 28.5152 11.2536 28.9417 13.3844 28.7795C15.5151 28.6174 17.5711 27.8721 19.3546 26.6153C21.1381 25.3585 22.5892 23.6324 23.5685 21.603C24.5477 19.5736 25.0222 17.3091 24.9463 15.027C24.8704 12.745 24.2467 10.5222 23.1351 8.57221C22.0235 6.62225 20.4614 5.01071 18.5989 3.89247C16.7364 2.77423 14.6362 2.18689 12.5 2.18689V0Z" fill="#FFAD4D"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="10" style="width: 10%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="73" style="width: 73%;"></div>
+                <div class="seo-meta__body__item__red" data-value="17" style="width: 17%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row seo-meta__body"><!-- green -->  
+            <div class="col seo-meta__body__item nonbg smaller"><img src="images/ozon.png" alt=""></div>
+            <div class="col my-col-2 seo-meta__body__item justify-start">
+              <p class="seo-meta__body__item__p">https://www.gb465e.com</p>
+            </div>
+            <div class="col-1 seo-meta__body__item nonbg medium">
+              <p class="seo-meta__body__item__p">24.11.2020 </p>
+              <svg class="seo-meta__body__item__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM9 4C9 3.73478 8.89464 3.48043 8.70711 3.29289C8.51957 3.10536 8.26522 3 8 3C7.73478 3 7.48043 3.10536 7.29289 3.29289C7.10536 3.48043 7 3.73478 7 4V8C7.00006 8.26519 7.10545 8.51951 7.293 8.707L10.121 11.536C10.2139 11.6289 10.3242 11.7026 10.4456 11.7529C10.567 11.8032 10.6971 11.8291 10.8285 11.8291C10.9599 11.8291 11.09 11.8032 11.2114 11.7529C11.3328 11.7026 11.4431 11.6289 11.536 11.536C11.6289 11.4431 11.7026 11.3328 11.7529 11.2114C11.8032 11.09 11.8291 10.9599 11.8291 10.8285C11.8291 10.6971 11.8032 10.567 11.7529 10.4456C11.7026 10.3242 11.6289 10.2139 11.536 10.121L9 7.586V4Z" fill="#FFAD4D"></path>
+              </svg>
+            </div>
+            <div class="col seo-meta__body__item nonbg small"> 
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg small">
+              <div class="cont" data-value="95" style="color: #00C48C;">
+                <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 0C18.1144 4.75606e-08 21.5986 1.48957 24.2695 4.17675C26.9404 6.86393 28.6055 10.555 28.9384 14.5264C29.2713 18.4978 28.248 22.4632 26.0691 25.6453C23.8902 28.8275 20.7127 30.997 17.1596 31.7285C13.6065 32.4601 9.93388 31.701 6.86161 29.6C3.78934 27.499 1.53895 24.2076 0.55155 20.3709C-0.435854 16.5343 -0.0890822 12.429 1.5239 8.85985C3.13687 5.29066 5.89976 2.51489 9.27099 1.0766L10.0087 3.18214C7.11316 4.4175 4.74009 6.80164 3.35469 9.86725C1.96928 12.9329 1.67144 16.4589 2.51953 19.7542C3.36762 23.0496 5.3005 25.8766 7.93931 27.6812C10.5781 29.4857 13.7326 30.1378 16.7844 29.5094C19.8362 28.8811 22.5653 27.0177 24.4368 24.2845C26.3083 21.5513 27.1872 18.1453 26.9013 14.7343C26.6153 11.3232 25.1852 8.15294 22.8911 5.84489C20.597 3.53684 17.6045 2.25743 14.5 2.25743V0Z" fill="#00C48C"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col seo-meta__body__item nonbg">
+              <div class="seo-meta__body__item__cols">
+                <div class="seo-meta__body__item__green" data-value="35" style="width: 35%;"></div>
+                <div class="seo-meta__body__item__yellow" data-value="56" style="width: 56%;"></div>
+                <div class="seo-meta__body__item__red" data-value="9" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3">
+        <div class="sidebar">
+          <h3 class="sidebar__title">История показаний</h3>
+          <div class="sidebar__items"> 
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+            <div class="sidebar__item">
+              <p class="sidebar__item__p">22.03.2020</p>
+              <div class="sidebar__item__content"> 
+                <svg class="sidebar__item__svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2034 13.3305C14.9702 13.9304 14.5769 14.3303 14.1303 14.3303H8.49154C8.0383 14.3303 7.65171 13.9304 7.41843 13.3305H0V14.497C0.0341138 14.9244 0.234981 15.3213 0.559222 15.6019C0.883464 15.8824 1.30506 16.0243 1.73297 15.9966H20.9289C21.3568 16.0243 21.7784 15.8824 22.1026 15.6019C22.4269 15.3213 22.6278 14.9244 22.6619 14.497V13.3305H15.2034Z" fill="#494A4A"></path>
+                  <path d="M3.99978 2.6661H18.6633V11.9975H20.6629V1.04645C20.6683 0.775328 20.5662 0.5131 20.3788 0.317033C20.1915 0.120965 19.9342 0.00699016 19.6631 0H2.99999C2.72891 0.00699016 2.47161 0.120965 2.28428 0.317033C2.09696 0.5131 1.99483 0.775328 2.0002 1.04645V11.9975H3.99978V2.6661Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__yellow sidebar__item__val" data-value="56" style="width: 77px;"></div>
+                <svg class="sidebar__item__svg" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A"></path>
+                </svg>
+                <div class="seo-meta__body__item__red sidebar__item__val" data-value="34" style="width: 77px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__chartbar"> 
+            <h3 class="sidebar__title">Заголовки H3</h3>
+            <div id="chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"> </script>
+  <script src="scripts/index.js"> </script>
+</html>
