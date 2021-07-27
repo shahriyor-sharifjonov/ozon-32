@@ -1409,6 +1409,9 @@ td.undifined {
 .popup__save-btn {
   margin-top: 25px;
 }
+.popup__save-btn:hover {
+  text-decoration: none;
+}
 .popup__bottom {
   display: -webkit-box;
   display: -ms-flexbox;

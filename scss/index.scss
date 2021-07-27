@@ -1272,6 +1272,10 @@ td.undifined{
 
   &__save-btn{
     margin-top: 25px;
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 
 
