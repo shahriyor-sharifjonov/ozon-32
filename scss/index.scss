@@ -816,10 +816,27 @@ body{
   color: #00C48C;
 }
 
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+  width: 100%;
+  height: 286px;
+  border: none;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
 .ui-state-default{
   font-family: 'Proxima Nova';
   text-align: center;
   background: #fff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms ease;
+  
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button{
@@ -827,6 +844,58 @@ body{
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all{
+  background: none;
+  border: 1px solid transparent;
+}
+
+.ui-datepicker .ui-datepicker-title select{
+  margin: 1px 5px;
+  border: none;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #1A051D;
+  font-family: 'Proxima Nova';
+  border: none;
+
+  option{
+    background: #fff;
+    padding: 5px 0;
+    border: none;
+  }
+}
+
+.ui-datepicker .ui-datepicker-next{
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2px;
+
+  &-hover{
+    border: none;
+    background: #fff;
+  }
+}
+.ui-datepicker .ui-datepicker-prev{
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2px;
+
+  &-hover{
+    border: none;
+    background: #fff;
+  }
+}
+
+.ui-datepicker-year{
+  background: none;
+  margin: 1px 5px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
@@ -839,8 +908,9 @@ body{
 }
 
 .ui-state-default.ui-state-highlight{
-  color: #FA5535;
-  border: solid 1px #FA5535;
+  color: #1A2B48;
+  border: none;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -849,6 +919,22 @@ body{
 
 .ui-datepicker-calendar{
   font-family: 'Proxima Nova';
+
+
+  th{
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 5px);
+      height: 2px;
+      border-bottom: 2px dashed #ADB2BD;
+    }
+  }
 
   span{
     padding-top: 10px;
@@ -860,19 +946,30 @@ body{
 }
 
 .ui-state-default:hover{
-  background: #eee;
+  background: #9CB9D5;
+  color: #fff;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ui-state-disabled{
+  opacity: 1;
+
+  .ui-state-default{
+    color: #FFA26B;
+  }
 }
 
 .ui-state-default.ui-state-active{
-  background: rgba(81, 145, 250, 0.2);
-  color: #1A2B48;
+  background: #00498D;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: none;
-  border-right: solid 2px #5191fa;
-  border-bottom: none;
-  border-left: solid 2px #5191fa;
+  border:none;
 }
 
 .ui-datepicker-year{
@@ -1168,6 +1265,20 @@ body{
   align-items: center;
   justify-content: center;
 
+  &__item{
+    max-width: 320px;
+    width: 100%;
+  }
+
+  #calendar{
+    width: 100%;
+  }
+
+  &__right,
+  &__left{
+    width: 50%;
+  }
+
   &:target{
     opacity: 1;
     visibility: visible;
@@ -1176,6 +1287,14 @@ body{
       transform: perspective(6000px) rotateX(0);
       transition: 700ms ease;
     }
+  }
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
   }
 
   

@@ -85,3 +85,23 @@ $(function() {
     $(this).toggleClass('current')
   })
 })
+
+$( function() {
+  $( "#calendar" ).datepicker({
+    changeMonth: true, 
+    changeYear: true, 
+    beforeShowDay: function(date){
+			var dayOfWeek = date.getDay();
+			if (dayOfWeek == 6){
+				return [false];
+			} else {
+				return [true];
+			}
+		}
+  });
+} );
+
+const bir = document.querySelectorAll('.ui-state-default');
+for(let i = 0; i < bir.length; i++){
+  
+}
