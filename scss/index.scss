@@ -1270,6 +1270,17 @@ td.undifined{
   align-items: center;
   justify-content: center;
 
+  &__save-btn{
+    margin-top: 25px;
+  }
+
+
+  &__bottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   &__item{
     max-width: 320px;
     width: 100%;
