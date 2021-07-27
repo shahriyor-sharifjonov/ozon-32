@@ -836,7 +836,12 @@ body{
   align-items: center;
   justify-content: center;
   transition: 200ms ease;
-  
+}
+
+td.undifined{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button{
