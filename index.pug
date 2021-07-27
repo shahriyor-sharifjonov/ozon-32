@@ -808,7 +808,26 @@ html(lang="en")
             .popup__item#calendar
           .popup__right
             .popup__item#time
-              p salom
+              .popup__column
+                button.popup__button(onclick="timingFunc()").hourPlus
+                  svg(width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M9 3.74613L2.64896 10.0972C2.04297 10.7032 1.06047 10.7032 0.454489 10.0972C-0.151496 9.49119 -0.151497 8.50869 0.454489 7.90271L7.90277 0.454429C8.50875 -0.151557 9.49125 -0.151557 10.0972 0.454429L17.5455 7.9027C18.1515 8.50869 18.1515 9.49119 17.5455 10.0972C16.9395 10.7032 15.957 10.7032 15.351 10.0972L9 3.74613Z" fill="#00498D")
+                span.popup__value.hour 0 
+                input(type="number" hidden value="12").hour-val
+                button.popup__button(onclick="timingFunc()").hourMinus
+                  svg(width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M9 6.80569L15.351 0.454646C15.957 -0.15134 16.9395 -0.15134 17.5455 0.454646C18.1515 1.06063 18.1515 2.04313 17.5455 2.64912L10.0972 10.0974C9.49125 10.7034 8.50875 10.7034 7.90277 10.0974L0.45449 2.64911C-0.151496 2.04313 -0.151496 1.06063 0.45449 0.454645C1.06048 -0.15134 2.04297 -0.15134 2.64896 0.454645L9 6.80569Z" fill="#00498D")
+              .popup__column.devider
+                span : 
+              .popup__column
+                button.popup__button(onclick="timingFunc()").minutePlus
+                  svg(width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M9 3.74613L2.64896 10.0972C2.04297 10.7032 1.06047 10.7032 0.454489 10.0972C-0.151496 9.49119 -0.151497 8.50869 0.454489 7.90271L7.90277 0.454429C8.50875 -0.151557 9.49125 -0.151557 10.0972 0.454429L17.5455 7.9027C18.1515 8.50869 18.1515 9.49119 17.5455 10.0972C16.9395 10.7032 15.957 10.7032 15.351 10.0972L9 3.74613Z" fill="#00498D")
+                span.popup__value.minute 0
+                input(type="number" hidden value="12").minute-val
+                button.popup__button(onclick="timingFunc()").minuteMinus
+                  svg(width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M9 6.80569L15.351 0.454646C15.957 -0.15134 16.9395 -0.15134 17.5455 0.454646C18.1515 1.06063 18.1515 2.04313 17.5455 2.64912L10.0972 10.0974C9.49125 10.7034 8.50875 10.7034 7.90277 10.0974L0.45449 2.64911C-0.151496 2.04313 -0.151496 1.06063 0.45449 0.454645C1.06048 -0.15134 2.04297 -0.15134 2.64896 0.454645L9 6.80569Z" fill="#00498D")
       a(href="#main").popup__close  
 
   

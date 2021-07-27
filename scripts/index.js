@@ -1,41 +1,51 @@
+function timingFunc(){
+  const hourVal = document.querySelector('.hour-val');
+  const minuteVal = document.querySelector('.minute-val');
+  const hour = document.querySelector('.hour');
+  const minute = document.querySelector('.minute');
+  const hourPlus = document.querySelector('.hourPlus');
+  const hourMinus = document.querySelector('.hourMinus');
+  const minutePlus = document.querySelector('.minutePlus');
+  const minuteMinus = document.querySelector('.minuteMinus');
 
-// $( function() {
-//   var dateFormat = "",
-//     from = $( "#from" )
-//       .datepicker({
-//         defaultDate: "+1w",
-//         changeMonth: true,
-//         numberOfMonths: 1,
-//         dateFormat: 'с dd.mm.yy',
-//         minDate: -20, 
-//         maxDate: "+1M +10D"
-//       })
-//       .on( "change", function() {
-//         to.datepicker( "option", "minDate", getDate( this ) );
-//       }),
-//     to = $( "#to" ).datepicker({
-//       defaultDate: "+1w",
-//       changeMonth: true,
-//       numberOfMonths: 1,
-//       minDate: -20, 
-//       dateFormat: 'по dd.mm.yy',
-//       maxDate: "+1M +10D"
-//     })
-//     .on( "change", function() {
-//       from.datepicker( "option", "maxDate", getDate( this ) );
-//     });
+  hour.innerHTML = hourVal.value
+  minute.innerHTML = minuteVal.value
 
-//   function getDate( element ) {
-//     var date;
-//     try {
-//       date = $.datepicker.parseDate( dateFormat, element.value );
-//     } catch( error ) {
-//       date = null;
-//     }
+  hourPlus.onclick = function(){
+    hourVal.value++;
+    timingFunc()
+    if(hourVal.value >= 24){
+      hourVal.value = 0;
+      timingFunc()
+    }
+  }
+  hourMinus.onclick = function(){
+    hourVal.value--;
+    timingFunc()
+    if(hourVal.value <= 1){
+      hourVal.value = 23;
+      timingFunc()
+    }
+  }
+  minutePlus.onclick = function(){
+    minuteVal.value++;
+    timingFunc()
+    if(minuteVal.value >= 60){
+      minuteVal.value = 1;
+      timingFunc()
+    }
+  }
+  minuteMinus.onclick = function(){
+    minuteVal.value--;
+    timingFunc()
+    if(minuteVal.value <= 1){
+      minuteVal.value = 59;
+      timingFunc()
+    }
+  }
+}
 
-//     return date;
-//   }
-// } );
+window.onload = timingFunc;
 
 
 var options = {
