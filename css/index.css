@@ -496,17 +496,46 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
 }
 .ozon__item-with-img {
   width: 100%;
   margin-right: 0;
-}
-.ozon__item.disabled {
   border: none;
+  border: 1px solid transparent;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+  padding: 4px 8px;
+  border-radius: 6px;
+  max-width: 150px;
+  width: 100%;
+  margin-right: 4px;
+  cursor: pointer;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.ozon__item.disabled img {
+.ozon__item-with-img img {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+.ozon__item-with-img.current {
+  background: #fff !important;
+  border: 1px solid #8B8B8B !important;
+}
+.ozon__item-with-img.current img {
+  -webkit-filter: none;
+          filter: none;
 }
 .ozon__item.current {
   background: #00498D;
@@ -668,8 +697,14 @@ body {
   transition: 200ms ease;
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  cursor: pointer;
 }
 .seo-meta__body:hover {
+  background: #E4E4E4;
+}
+.seo-meta__body.current {
   background: #E4E4E4;
 }
 .seo-meta__body__item {
@@ -1060,15 +1095,30 @@ body {
   background: #fff;
   border-radius: 6px;
   padding: 15px 15px 15px 21px;
-  height: 100%;
+  max-height: calc(100% - 60px);
   width: 100%;
   margin-bottom: 11px;
 }
+.sidebar__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sidebar__btns button:first-child {
+  margin-right: 8px;
+}
+.sidebar-body {
+  max-height: 100%;
+}
 .sidebar__chartbar {
-  padding-top: 50px;
-  border-top: 1px solid #BEBEBE;
   margin: 50px -15px 0 -20px;
-  padding: 50px 20px 0 20px;
+  padding: 0px 20px 0 20px;
 }
 .sidebar__items {
   height: 339px;

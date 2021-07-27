@@ -64,3 +64,24 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+$(function() {
+  $('.ozon__item-with-img').click(function() {
+    $('.ozon__item-with-img').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+$(function() {
+  $('.ozon__item').click(function() {
+    $('.ozon__item').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})
+
+$(function() {
+  $('.seo-meta__body').click(function() {
+    $('.seo-meta__body').not(this).removeClass('current')
+    $(this).toggleClass('current')
+  })
+})

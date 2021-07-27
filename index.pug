@@ -24,21 +24,21 @@ html(lang="en")
               p.ozon__item__p Разделы
           .ozon__row.ozon__row-with-img
             p.ozon__title Проект
-            .ozon__item.ozon__item-with-img 
+            .ozon__item-with-img.current
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
-            .ozon__item.ozon__item-with-img.disabled
+            .ozon__item-with-img
               img(src="images/ozon.png", alt="").ozon__item__img
         .content.seo-meta
           .row.seo-meta__header
@@ -64,7 +64,7 @@ html(lang="en")
                   svg(width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg")
                     path(d="M10.5126 0C11.201 0 11.7876 0.238298 12.2726 0.714894C12.7575 1.19149 13 1.75745 13 2.41277V18.5872C13 19.2426 12.7575 19.8085 12.2726 20.2851C11.7876 20.7617 11.201 21 10.5126 21H2.48736C1.79904 21 1.21239 20.7617 0.727437 20.2851C0.242479 19.8085 0 19.2426 0 18.5872V2.41277C0 1.75745 0.242479 1.19149 0.727437 0.714894C1.21239 0.238298 1.79904 0 2.48736 0H10.5126ZM6.5 20.017C6.92238 20.017 7.28219 19.883 7.57942 19.6149C7.87665 19.3468 8.02527 19.0117 8.02527 18.6096C8.02527 18.2074 7.87665 17.8649 7.57942 17.5819C7.28219 17.2989 6.92238 17.1574 6.5 17.1574C6.07762 17.1574 5.72563 17.2989 5.44404 17.5819C5.16246 17.8649 5.02166 18.2074 5.02166 18.6096C5.02166 19.0117 5.16246 19.3468 5.44404 19.6149C5.72563 19.883 6.07762 20.017 6.5 20.017ZM11.0289 16.2191V2.85957H2.01805V16.2191H11.0289Z" fill="#494A4A")
                   | Мобильные страницы
-          .row.seo-meta__body <!-- green -->  
+          .row.seo-meta__body.current <!-- green -->  
             .col.seo-meta__body__item.nonbg.smaller
               img(src="images/ozon.png", alt="")
             .col.my-col-2.seo-meta__body__item.justify-start
@@ -658,7 +658,7 @@ html(lang="en")
                 .seo-meta__body__item__green(data-value="35" style="width: 35%;")
                 .seo-meta__body__item__yellow(data-value="56" style="width: 56%;")
                 .seo-meta__body__item__red(data-value="9" style="width: 9%;")
-      .col-12.col-xl-3
+      .col-12.col-xl-3.sidebar-body
         .sidebar
           h3.sidebar__title История показаний
           .sidebar__items 
@@ -765,6 +765,19 @@ html(lang="en")
           .sidebar__chartbar 
             h3.sidebar__title Заголовки H3
             #chart
+        .sidebar__btns 
+          button.save-btn 
+            .save-btn__i
+              svg(width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z")
+                path(d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z")
+            p Тест страницы
+          button.save-btn 
+            .save-btn__i
+              svg(width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z")
+                path(d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z")
+            p Тест проекта
             
   
   script(src="https://code.jquery.com/jquery-1.12.4.js") 

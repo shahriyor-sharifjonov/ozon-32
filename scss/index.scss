@@ -432,18 +432,37 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 200ms ease;
 
     &-with-img{
-      // max-width: 80px;
       width: 100%;
       margin-right: 0;
-    }
-
-    &.disabled{
       border: none;
+      border: 1px solid transparent;
+      transition: 200ms ease;
+      padding: 4px 8px;
+      border-radius: 6px;
+      max-width: 150px;
+      width: 100%;
+      margin-right: 4px;
+      cursor: pointer;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img{
         filter: grayscale(1);
+        transition: 200ms ease;
+      }
+
+      &.current{
+        background: #fff !important;
+        border: 1px solid #8B8B8B !important;
+
+        img{
+          filter: none;
+        }
       }
     }
 
@@ -622,8 +641,15 @@ body{
     transition: 200ms ease;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    cursor: pointer;
 
     &:hover{
+      background: #E4E4E4;
+    }
+
+    &.current{
       background: #E4E4E4;
     }
 
@@ -962,15 +988,30 @@ body{
   background: #fff;
   border-radius: 6px;
   padding: 15px 15px 15px 21px;
-  height: 100%;
+  max-height: calc(100% - 60px);
   width: 100%;
   margin-bottom: 11px;
 
+  &__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+
+      &:first-child{
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &-body{
+    max-height: 100%;
+  }
+
   &__chartbar{
-    padding-top: 50px;
-    border-top: 1px solid #BEBEBE;
     margin: 50px -15px 0 -20px;
-    padding: 50px 20px 0 20px;
+    padding: 0px 20px 0 20px;
   }
 
   &__items{
